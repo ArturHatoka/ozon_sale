@@ -1,0 +1,31 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "consola": "^2.15.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.0",
+    "init": "^0.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "pg-promise": "^10.10.2",
+    "sequelize": "^6.6.2",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "migrate": "node ./database/migrations/index.js",
+    "seed": "node database/seeders/index.js",
+    "migrate --seed": "node ./database/migrations/index.js && node database/seeders/index.js"
+  },
+  "author": "Potap",
+  "license": "ISC"
+}
